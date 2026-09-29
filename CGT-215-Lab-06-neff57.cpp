@@ -46,25 +46,10 @@ int main() {
         exit(1);
     }
     Sprite resultSprite(resultTexture);
-    
-    while (window.isOpen())
-    {
-        while (const std::optional event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-            {
-                window.close();
-            }
-        }
 
-        window.clear();
-        window.draw(resultSprite);
-        window.display();
-    }
-
-    /* window.clear();
+    window.clear();
     window.draw(resultSprite);
     window.display();
 
-    while(true); */
+    while(true);
 }
